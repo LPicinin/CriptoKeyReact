@@ -1,0 +1,30 @@
+.vector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1%;
+}
+
+button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+}
+button:focus {outline:0;}
+
+.w3-button {
+  width: 150px;
+}
+
+.w3-black {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+.w3-black:hover {
+  color: #000 !important;
+  background-color: gray !important;
+}
