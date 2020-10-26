@@ -3,17 +3,21 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  padding: 1%;
 }
 
 button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  width: 50%;
   height: 50px;
+  margin: 0.5%;
+  font-size: large;
 }
-button:focus {outline:0;}
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
 
 .w3-button {
   width: 150px;
@@ -24,7 +28,3 @@ button:focus {outline:0;}
   background-color: #000 !important;
 }
 
-.w3-black:hover {
-  color: #000 !important;
-  background-color: gray !important;
-}

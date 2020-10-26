@@ -52,7 +52,7 @@ export default function Landing() {
     <div id="landing">
       {vbits.map((bitsp, index) => {
         return (
-          <div className="vector-list">
+          <div className="vector-list" key={index}>
             <VectorBits
               bits={bitsp}
               rowMatrix={index}
