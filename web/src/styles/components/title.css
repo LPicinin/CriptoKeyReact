@@ -1,0 +1,13 @@
+#title_pane
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#title_pane label
+{
+    font-size: 250%;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+}

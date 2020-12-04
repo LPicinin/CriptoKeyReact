@@ -4,6 +4,7 @@ import "../styles/pages/landing.css";
 
 import VectorBits from "../components/VectorBits";
 import Treasure from "../components/Treasure";
+import Data from "../data"
 
 export default function Landing() {
   const size = 5;
@@ -28,22 +29,11 @@ export default function Landing() {
   }
 
   function getKeyOpen() {
-    let keygen = [
-      new Array<boolean>(size).fill(false),
-      new Array<boolean>(size).fill(false),
-      new Array<boolean>(size).fill(false),
-      new Array<boolean>(size).fill(false),
-    ];
     //4 - 00100
-    keygen[0][2] = true;
     //11 - 01011
-    keygen[1][1] = keygen[1][3] = keygen[1][4] = true;
     //9 - 01001
-    keygen[2][1] = keygen[2][4] = true;
     //14 - 01110
-    keygen[3][1] = keygen[3][2] = keygen[3][3] = true;
-
-    return keygen;
+    return Data['key'];
   }
 
   useEffect(() => {}, []);
